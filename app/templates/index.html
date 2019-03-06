@@ -1,0 +1,423 @@
+<!---------------------------------------------------->
+<!--                                                -->
+<!-- QRCommande API Carte --- /templates/index.html -->
+<!--                                                -->
+<!---------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QRCommande</title>
+    <!-- =========================================================================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =========================================================================================================== -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"
+          rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- =========================================================================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!-- =========================================================================================================== -->
+    <style>
+    </style>
+</head>
+<!-- =============================================================================================================== -->
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center img-fluid">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" class="rounded padding20" width="250px">
+            </div>
+        </div>
+        <!-- ======================================================================================================= -->
+        <div class="martop20"></div>
+        <div class="hr1"></div>
+        <h5 style="text-align: center">
+            <div class="scrollmenu navlist"><>
+                <a href="#biere">Bières</a><>
+                <a href="#cocktail">Cocktails</a><>
+                <a href="#soft">Softs</a><>
+                <a href="#vin">Vins</a><>
+                <a href="#alcohol">Alcools</a><>
+                <a href="#boisson_chaude">Boissons chaudes</a><>
+                <a href="#biere">Bières</a><>
+                <a href="#cocktail">Cocktails</a><>
+                <a href="#soft">Softs</a><>
+                <a href="#vin">Vins</a><>
+                <a href="#alcohol">Alcools</a><>
+                <a href="#boisson_chaude">Boissons chaudes</a><>
+                <a href="#biere">Bières</a><>
+                <a href="#cocktail">Cocktails</a><>
+                <a href="#soft">Softs</a><>
+                <a href="#vin">Vins</a><>
+                <a href="#alcohol">Alcools</a><>
+                <!----------------------------------------------
+                <a href="#boisson_chaude">Boissons chaudes</a><>
+                <a href="#biere">Bières</a><>
+                <a href="#cocktail">Cocktails</a><>
+                <a href="#soft">Softs</a><>
+                <a href="#vin">Vins</a><>
+                <a href="#alcohol">Alcools</a><>
+                <a href="#boisson_chaude">Boissons chaudes</a><>
+                <a href="#biere">Bières</a><>
+                <a href="#cocktail">Cocktails</a><>
+                <a href="#soft">Softs</a><>
+                <a href="#vin">Vins</a><>
+                <a href="#alcohol">Alcools</a><>
+                <a href="#boisson_chaude">Boissons chaudes</a><>
+                <a href="#biere">Bières</a><>
+                <a href="#cocktail">Cocktails</a><>
+                <a href="#soft">Softs</a><>
+                <a href="#vin">Vins</a><>
+                <a href="#alcohol">Alcools</a><>
+                <a href="#boisson_chaude">Boissons chaudes</a><>
+                ----------------------------------------------->
+            </div>
+        </h5>
+        <div class="hr1"></div>
+        <div class="martop20"></div>
+        <!-- ======================================================================================================= -->
+        <!--------------------------------------------------------------------------------------------------------------
+        <div class="col text-center img-fluid">
+            <a href="http://www.unitag.io/qreator/generate?setting=%7B%22LAYOUT%22%3A%7B%22COLORBG%22%3A%22ffffff%22%2
+            C%22COLOR1%22%3A%22000000%22%2C%22COLOR2%22%3A%229c23ba%22%2C%22GRADIENT_TYPE%22%3A%22HORI%22%7D%2C%22EYES%
+            22%3A%7B%22EYE_TYPE%22%3A%22Spike%22%7D%2C%22BODY_TYPE%22%3A7%2C%22E%22%3A%22M%22%7D&data=%7B%22DATA%22%3A%
+            7B%22URL%22%3A%22http%3A%5C%2F%5C%2Fopn.to%5C%2Fa%5C%2FI44d3%22%7D%2C%22TYPE%22%3A%22url%22%7D ">
+                <img style="float: left" width="100px" src="http://www.unitag.io/qreator/generate?setting=%7B%22LAYOUT
+                %22%3A%7B%22COLORBG%22%3A%22ffffff%22%2C%22COLOR1%22%3A%22000000%22%2C%22COLOR2%22%3A%229c23ba%22%2C%22
+                GRADIENT_TYPE%22%3A%22HORI%22%7D%2C%22EYES%22%3A%7B%22EYE_TYPE%22%3A%22Spike%22%7D%2C%22BODY_TYPE%22%3A
+                7%2C%22E%22%3A%22M%22%7D&data=%7B%22DATA%22%3A%7B%22URL%22%3A%22http%3A%5C%2F%5C%2Fopn.to%5C%2Fa%5C%2FI
+                44d3%22%7D%2C%22TYPE%22%3A%22url%22%7D" alt="QR Code - vidéo">
+            </a>
+            <a href="http://www.unitag.io/qreator/generate?setting=%7B%22EYES%22%3A%7B%22EYE_TYPE%22%3A%22LLRight%22%7D
+            %2C%22E%22%3A%22H%22%2C%22BODY_TYPE%22%3A11%2C%22LAYOUT%22%3A%7B%22COLORBG%22%3A%22ffffff%22%2C%22COLOR1%22
+            %3A%22000000%22%2C%22COLOR2%22%3A%229c23ba%22%2C%22GRADIENT_TYPE%22%3A%22HORI%22%7D%7D&data=%7B%22DATA%22%3
+            A%7B%22URL%22%3A%22http%3A%5C%2F%5C%2Fopn.to%5C%2Fa%5C%2FBFW7h%22%7D%2C%22TYPE%22%3A%22url%22%7D ">
+                <img width="100px" src="http://www.unitag.io/qreator/generate?setting=%7B%22EYES%22%3A%7B%22EYE_TYPE%22
+                %3A%22LLRight%22%7D%2C%22E%22%3A%22H%22%2C%22BODY_TYPE%22%3A11%2C%22LAYOUT%22%3A%7B%22COLORBG%22%3A%22f
+                fffff%22%2C%22COLOR1%22%3A%22000000%22%2C%22COLOR2%22%3A%229c23ba%22%2C%22GRADIENT_TYPE%22%3A%22HORI%22
+                %7D%7D&data=%7B%22DATA%22%3A%7B%22URL%22%3A%22http%3A%5C%2F%5C%2Fopn.to%5C%2Fa%5C%2FBFW7h%22%7D%2C%22TY
+                PE%22%3A%22url%22%7D" alt="QR Code - QRCommande">
+            </a>
+            <a href="http://www.unitag.io/qreator/generate?setting=%7B%22LAYOUT%22%3A%7B%22COLORBG%22%3A%22ffffff%22%2C
+            %22COLOR1%22%3A%22000000%22%2C%22COLOR2%22%3A%229c23ba%22%2C%22GRADIENT_TYPE%22%3A%22RADI%22%7D%2C%22EYES%2
+            2%3A%7B%22EYE_TYPE%22%3A%22Diamond%22%7D%2C%22BODY_TYPE%22%3A4%2C%22E%22%3A%22M%22%2C%22ARRONDI%22%3A6%7D&d
+            ata=%7B%22DATA%22%3A%7B%22URL%22%3A%22http%3A%5C%2F%5C%2Fopn.to%5C%2Fa%5C%2F8BTLZ%22%7D%2C%22TYPE%22%3A%22u
+            rl%22%7D ">
+                <img style="float: right" width="100px" src="http://www.unitag.io/qreator/generate?setting=%7B%22LAYOUT
+                %22%3A%7B%22COLORBG%22%3A%22ffffff%22%2C%22COLOR1%22%3A%22000000%22%2C%22COLOR2%22%3A%229c23ba%22%2C%22
+                GRADIENT_TYPE%22%3A%22RADI%22%7D%2C%22EYES%22%3A%7B%22EYE_TYPE%22%3A%22Diamond%22%7D%2C%22BODY_TYPE%22%
+                3A4%2C%22E%22%3A%22M%22%2C%22ARRONDI%22%3A6%7D&data=%7B%22DATA%22%3A%7B%22URL%22%3A%22http%3A%5C%2F%5C%
+                2Fopn.to%5C%2Fa%5C%2F8BTLZ%22%7D%2C%22TYPE%22%3A%22url%22%7D" alt="QR Code - gitlab">
+            </a>
+        </div>
+        --------------------------------------------------------------------------------------------------------------->
+        <!-- ======================================================================================================= -->
+        <div class="martop70"></div>
+        <h2 id="biere">Les Bières</h2>
+        <div class="martop20"></div>
+        <div class="margin10">
+            {% for biere in bieres %}
+                {% if loop.first %}
+                    <div class="hr1"></div>
+                {% else %}
+                    <div class="hr2"></div>
+                {% endif %}
+                <div class="row">
+                    <h3 class="col bold martop8">{{ biere.nom }}</h3>
+                    <h3 class="col-2 martop8 right">{{ biere.prix }}€</h3>
+                </div>
+                <div class="row">
+                    <div class="col">{{ biere.description }}</div>
+                    {% set produit = biere.nom %}
+                    <div class="howmany col-md-auto">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-danger btn-number"  data-type="minus"
+                                        data-field="quant_{{ produit }}">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="quant_{{ produit }}" class="form-control input-number center"
+                                   value="0" min="0" max="9">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-success btn-number" data-type="plus"
+                                        data-field="quant_{{ produit }}">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {% if loop.last %}
+                    <div class="hr2"></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <!-- ======================================================================================================= -->
+        <div class="martop70"></div>
+        <h2 id="cocktail">Les Cocktails</h2>
+        <div class="martop20"></div>
+        <div class="margin10">
+            {% for cocktail in cocktails %}
+                {% if loop.first %}
+                    <div class="hr1"></div>
+                {% else %}
+                    <div class="hr2"></div>
+                {% endif %}
+                <div class="row">
+                    <h3 class="col bold martop8">{{ cocktail.nom }}</h3>
+                    <h3 class="col-2 martop8 right" >{{ cocktail.prix }}€</h3>
+                </div>
+                <div class="row">
+                    <div class="col">{{ cocktail.description }}</div>
+                    {% set produit = cocktail.nom %}
+                    <div class="howmany col-md-auto">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-danger btn-number"  data-type="minus"
+                                        data-field="quant_{{ produit }}">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="quant_{{ produit }}" class="form-control input-number center"
+                                   value="0" min="0" max="9">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-success btn-number" data-type="plus"
+                                        data-field="quant_{{ produit }}">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {% if loop.last %}
+                    <div class="hr2"></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <!-- ======================================================================================================= -->
+        <div class="martop70"></div>
+        <h2 id="alcohol">Les Alcools</h2>
+        <div class="martop20"></div>
+        <div class="margin10">
+            {% for alcohol in alcohols %}
+                {% if loop.first %}
+                    <div class="hr1"></div>
+                {% else %}
+                    <div class="hr2"></div>
+                {% endif %}
+                <div class="row">
+                    <h3 class="col bold martop8">{{ alcohol.nom }}</h3>
+                    <h3 class="col-2 martop8 right" >{{ alcohol.prix }}€</h3>
+                </div>
+                <div class="row">
+                    <div class="col">{{ alcohol.description }}</div>
+                    {% set produit = alcohol.nom %}
+                    <div class="howmany col-md-auto">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-danger btn-number" data-type="minus"
+                                        data-field="quant_{{ produit }}">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="quant_{{ produit }}" class="form-control input-number center"
+                                   value="0" min="0" max="9">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-success btn-number" data-type="plus"
+                                        data-field="quant_{{ produit }}">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {% if loop.last %}
+                    <div class="hr2"></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <!-- ======================================================================================================= -->
+        <div class="martop70"></div>
+        <h2 id="vin">Les vins</h2>
+        <div class="martop20"></div>
+        <div class="margin10">
+            {% for vin in vins %}
+                {% if loop.first %}
+                    <div class="hr1"></div>
+                {% else %}
+                    <div class="hr2"></div>
+                {% endif %}
+                <div class="row">
+                    <h3 class="col bold martop8">{{ vin.nom }}</h3>
+                    <h3 class="col-2 martop8 right" >{{ vin.prix }}€</h3>
+                </div>
+                <div class="row">
+                    <div class="col">{{ vin.description }}</div>
+                    {% set produit = vin.nom %}
+                    <div class="howmany col-md-auto">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-danger btn-number"  data-type="minus"
+                                        data-field="quant_{{ produit }}">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="quant_{{ produit }}" class="form-control input-number center"
+                                   value="0" min="0" max="9">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-success btn-number" data-type="plus"
+                                        data-field="quant_{{ produit }}">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {% if loop.last %}
+                    <div class="hr2"></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <!-- ======================================================================================================= -->
+        <div class="martop70"></div>
+        <h2 id="boisson_chaude">Les Boissons chaudes</h2>
+        <div class="martop20"></div>
+        <div class="margin10">
+            {% for boisson_chaude in boissons_chaudes %}
+                {% if loop.first %}
+                    <div class="hr1"></div>
+                {% else %}
+                    <div class="hr2"></div>
+                {% endif %}
+                <div class="row">
+                    <h3 class="col bold martop8">{{ boisson_chaude.nom }}</h3>
+                    <h3 class="col-2 martop8 right" >{{ boisson_chaude.prix }}€</h3>
+                </div>
+                <div class="row">
+                    <div class="col">{{ boisson_chaude.description }}</div>
+                    {% set produit = boisson_chaude.nom %}
+                    <div class="howmany col-md-auto">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-danger btn-number"  data-type="minus"
+                                        data-field="quant_{{ produit }}">
+                                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                            </span>
+                            <input type="text" name="quant_{{ produit }}" class="form-control input-number center"
+                                   value="0" min="0" max="9">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-success btn-number" data-type="plus"
+                                        data-field="quant_{{ produit }}">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                {% if loop.last %}
+                    <div class="hr2"></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <!-- ======================================================================================================= -->
+        <div class="martop20"></div>
+        <div class="hr1"></div>
+        <div class="text-center center-block top30">
+            <a href="#"><i id="social-in" class="social-padding fa fa-linkedin-square fa-3x social"></i></a>
+            <a href="#"><i id="social-tw" class="social-padding fa fa-twitter-square fa-3x social"></i></a>
+            <a href="#"><i id="social-github" class="social-padding fa fa-github-square fa-3x social"></i></a>
+        </div>
+        <div class="text-center center-block">
+            <a href="http://www.baptiste-projetpro.com/post.html#para6">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" class="rounded logo img-fluid">
+            </a>
+        </div>
+        <div class="footer-copyright text-center text-black-50 py-3 marbot30">© 2018 Copyright :
+            <a class="dark-grey-text" href="http://www.baptiste-projetpro.com/post.html#para6">qrcommande.com</a>
+        </div>
+    </div>
+    <!-- =========================================================================================================== -->
+    <script type="text/javascript">
+        //plugin bootstrap minus and plus
+        //http://jsfiddle.net/laelitenetwork/puJ6G/
+        $('.btn-number').click(function(e){
+            e.preventDefault();
+
+            fieldName = $(this).attr('data-field');
+            type      = $(this).attr('data-type');
+            var input = $("input[name='"+fieldName+"']");
+            var currentVal = parseInt(input.val());
+            if (!isNaN(currentVal)) {
+                if(type == 'minus') {
+
+                    if(currentVal > input.attr('min')) {
+                        input.val(currentVal - 1).change();
+                    }
+                    if(parseInt(input.val()) == input.attr('min')) {
+                        $(this).attr('disabled', true);
+                    }
+
+                } else if(type == 'plus') {
+
+                    if(currentVal < input.attr('max')) {
+                        input.val(currentVal + 1).change();
+                    }
+                    if(parseInt(input.val()) == input.attr('max')) {
+                        $(this).attr('disabled', true);
+                    }
+
+                }
+            } else {
+                input.val(0);
+            }
+        });
+        $('.input-number').focusin(function(){
+           $(this).data('oldValue', $(this).val());
+        });
+        $('.input-number').change(function() {
+
+            minValue =  parseInt($(this).attr('min'));
+            maxValue =  parseInt($(this).attr('max'));
+            valueCurrent = parseInt($(this).val());
+
+            name = $(this).attr('name');
+            if(valueCurrent >= minValue) {
+                $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+            } else {
+                alert('Sorry, the minimum value was reached');
+                $(this).val($(this).data('oldValue'));
+            }
+            if(valueCurrent <= maxValue) {
+                $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+            } else {
+                alert('Sorry, the maximum value was reached');
+                $(this).val($(this).data('oldValue'));
+            }
+
+        });
+        $(".input-number").keydown(function (e) {
+                // Allow: backspace, delete, tab, escape, enter and .
+                if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+                     // Allow: Ctrl+A
+                    (e.keyCode == 65 && e.ctrlKey === true) ||
+                     // Allow: home, end, left, right
+                    (e.keyCode >= 35 && e.keyCode <= 39)) {
+                         // let it happen, don't do anything
+                         return;
+                }
+                // Ensure that it is a number and stop the keypress
+                if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                    e.preventDefault();
+                }
+            });
+    </script>
+</body>
+</html>

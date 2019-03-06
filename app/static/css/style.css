@@ -1,0 +1,233 @@
+/****************************************************/
+/**                                                **/
+/** QRCommande ************* /static/css/style.css **/
+/**                                                **/
+/****************************************************/
+
+.martop8{
+ margin-top: 8px;
+}
+
+.howmany{
+ width: 150px;
+ margin-bottom: 8px;
+}
+
+.navlist{
+ text-decoration: none;
+  color: black
+}
+
+.margin10{
+ margin-left: 10px;
+ margin-right: 10px
+}
+
+.martop70{
+ margin-top: 70px;
+}
+
+.right{
+ text-align: right;
+}
+
+.center{
+ text-align: center;
+}
+
+/**** Font ****/
+/**************/
+
+.bold {
+ font-weight: bold;
+}
+
+/**** Nav bar ****/
+/*****************/
+
+div.scrollmenu {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+}
+
+
+/**** hr ****/
+/************/
+
+.hr1 {
+ width: 100%;
+ height: 1px;
+ background-color: black;
+ }
+
+.hr2 {
+ width: auto;
+ height: 1px;
+ background-color: #D8D8D8;
+ }
+
+
+/**** Padding ****/
+/*****************/
+
+.top30 {
+ padding-top: 30px;
+ }
+
+.bot30 {
+ padding-bottom: 30px;
+ }
+
+.Padbord60 {
+ padding-left: 60px;
+ padding-right: 60px;
+}
+
+.padding30 {
+ padding: 30px;
+ }
+
+.padding20 {
+ padding: 20px;
+ }
+
+.padding10 {
+ padding: 10px;
+ }
+
+
+/**** Margin ****/
+/*****************/
+
+.marbord60{
+ margin-left: 60px;
+ margin-right: 60px;
+}
+
+.marbord40{
+ margin-left: 40px;
+ margin-right: 40px;
+}
+
+.martop50{
+ margin-bottom: 50px;
+}
+
+.martop5{
+ margin-top: 5px;
+}
+
+.martop20{
+ margin-top: 20px;
+}
+
+.marbot30{
+ margin-bottom: 30px;
+}
+
+
+ /**** Status Services ****/
+ /*************************/
+
+.status-list {
+ padding-left: 70px;
+ padding-right: 70px;
+ }
+
+
+/**** Status Messages ****/
+/*************************/
+
+.message-list {
+ list-style: none;
+ margin-left: 0;
+ padding-left: 140px;
+ margin-right: 0;
+ padding-right: 140px;
+ }
+
+.mess {
+ margin-left: 60px;
+ margin-right: 60px;
+ text-align: justify;
+}
+
+.green {
+ background-color: green;
+ float: right;
+ width: 8%;
+}
+
+.orange {
+ background-color: orange;
+ float: right;
+ width: 8%;
+}
+
+.red {
+ background-color: red;
+ float: right;
+ width: 8%;
+}
+
+
+/**** Social Footer ****/
+/***********************/
+
+.social {
+ -webkit-transform: scale(0.8);
+ -moz-transform: scale(0.8);
+ -o-transform: scale(0.8);
+ -webkit-transition-duration: 0.5s;
+ -moz-transition-duration: 0.5s;
+ -o-transition-duration: 0.5s;
+ color: grey;
+ }
+
+.social:hover {
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ }
+
+i.social-padding {
+ padding: 0px 20px;
+ }
+
+#social-tw:hover {
+ color: #4099FF;
+ }
+#social-github:hover {
+ color: black;
+ }
+#social-in:hover {
+ color: #045FB4;
+ }
+
+
+
+/**** Footer Logo ****/
+/*********************/
+
+.logo {
+ padding: 20px;
+ width: 200px;
+ -webkit-transition-duration: 0.8s;
+ -moz-transition-duration: 0.8s;
+ -o-transition-duration: 0.8s;
+ }
+
+.logo:hover {
+ -webkit-transform: scale(1.4);
+ -moz-transform: scale(1.4);
+ -o-transform: scale(1.4);
+ }
